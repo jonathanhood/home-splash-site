@@ -6,6 +6,8 @@ deploy:
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR root@jonathanhood.org:/var/www/html/
   on:
     branch: master
+addons:
+  ssh_known_hosts: jonathanhood.org
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_3a2ddaae1d9e_key -iv $encrypted_3a2ddaae1d9e_iv
   -in deploy_rsa.enc -out /tmp/deploy_rsa -d
