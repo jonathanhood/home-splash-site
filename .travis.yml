@@ -3,7 +3,7 @@ dist: bionic
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR root@jonathanhood.org:/var/www/html/
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/home-splash-site/ root@jonathanhood.org:/var/www/html/
   on:
     branch: master
 addons:
