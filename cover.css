@@ -111,3 +111,37 @@ body {
 .social-icon img {
 	height: 32px;
 }
+
+/*
+ * Cards
+ */
+.cover .card {
+  margin-top: 75px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+}
+
+.cover .card li {
+  color: rgba(0, 0, 0, .75);
+}
+
+
+.cover .card a:link {
+  color: rgba(0, 0, 0, .75);
+  text-decoration: underline;
+}
+
+.cover .card a:visited {
+  color: rgba(0, 0, 0, .75);
+  text-decoration: underline;
+}
+
+.cover .card a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.cover .card a:active {
+  color: rgba(0, 0, 0, .75);
+  text-decoration: underline;
+}
